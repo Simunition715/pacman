@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>If you dont mind, can i have the time?</title>
+</head>
+<body>
+	
+<script type="text/javascript">
+
+function displayTime(hour,minute,period){
+	var hour = 8;
+	var minute = 30;
+	var period = "AM";
+
+	if(minute >= 30){
+		var timing = 'almost';
+		hour++;
+	}
+	else {
+		var timing = 'just after'
+	}
+	if(period == 'AM'){
+		period = 'morning'
+	}
+	else {
+		period = 'afternoon'
+	}
+	console.log ("It's " + timing + ' ' + hour + ' in the ' + period);
+}
+
+		
+	</script>
+	
+</body>
+</html>
